@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NewPass - Open Source Project</title>
+    <title>NewPass</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -49,7 +49,7 @@
         .container {
             padding: 60px;
             background-color: #141218; /* background_primary */
-            max-width: 640px; /* Imposta la larghezza massima */
+            max-width: 840px; /* Imposta la larghezza massima */
             margin: 0 auto; /* Centra il contenitore */
             word-wrap: break-word; /* Imposta il comportamento del testo */
         }
@@ -57,15 +57,16 @@
             margin: 50px 0;
         }
         .content h2 {
+            
             color: #CDBDFA; /* accent */
-            max-width: 640px; /* Limita la larghezza del titolo */
-            margin: 0 auto 25px; /* Aggiunge spazio sotto il titolo */
+            max-width: 840px; /* Limita la larghezza del titolo */
+            margin: 0 auto 30px; /* Aggiunge spazio sotto il titolo */
             text-align: left; /* Allinea il titolo a sinistra */
         }
         .content p, .content ul {
             color: #B2B2B2; /* text_primary */
             word-wrap: break-word; /* Imposta il comportamento del testo */
-            line-height: 1.5;
+            line-height: 1.6;
         }
         .content ul {
             list-style-type: none;
@@ -73,9 +74,9 @@
         }
         .content ul li {
             background: #211f26; /* background_primary */
-            margin: 20px 0;
+            margin: 30px 0;
             padding: 15px;
-            border-radius: 5px;
+            border-radius: 10px;
             word-wrap: break-word; /* Imposta il comportamento del testo */
         }
         .badges {
@@ -86,6 +87,13 @@
             margin: 10px;
             padding: 10px;
         }
+        .badge-link {
+            margin: 0 10px; /* Aggiunge spazio tra i badge */
+        }
+        #download {
+            text-align: center; /* Centra il testo all'interno del contenitore */
+        }
+
     </style>
 </head>
 <body>
@@ -102,36 +110,28 @@
     <div class="container">
         <div class="content" id="home">
             <h2>Welcome to NewPass</h2>
-            <p>NewPass is an open-source password manager designed to keep your passwords secure and easily accessible. Explore our features and join our community on GitHub.</p>
+            <p>Take full control of your passwords with NewPass, an open-source app. Born out of my personal need to protect my credentials after a cyberattack, I developed this app to provide a secure and reliable solution for everyone. With NewPass, you can generate and securely store strong passwords on your device, without worrying about compromises or losses. Download NewPass today and enjoy the peace of mind knowing that your passwords are safe.. Explore our features and join our community on GitHub.</p>
         </div>
         <div class="content" id="about">
-            <h2>About NewPass</h2>
-            <p>NewPass is developed with the goal of providing a simple and secure way to manage your passwords. It is fully open source, allowing you to inspect the code and contribute to its development.</p>
+            <h2>Key Features</h2>
+            </b></p><ul><li><b>Password Generation:</b> NewPass provides a robust password generator that allows you to create complex and secure passwords tailored to your specific requirements. You can customize the length and the character set (Uppercase, Numbers and Special).</li><li><b>Local Storage:</b> Your passwords are stored locally on your device, ensuring complete privacy and control over your data. NewPass does not store any passwords on external servers, minimizing the risk of unauthorized access (If you uninstall the app, your password are lost!).</li><li><b>AES Encryption:</b> NewPass encrypts all stored passwords using Advanced Encryption Standard (AES) with Cipher Block Chaining (CBC) mode before saving them in the local database.</li><li><b>SQLite Chiper:</b> NewPass utilizes SQLCipher, an extension for SQLite databases, to bolster security further by encrypting entirely the database, ensuring robust protection against unauthorized access. The encryption key is chosen by the user upon the first launch of the app, and it remains saved and encrypted in an EncryptedSharedPreferences. It is then requested every time the app is launched.</li><li><b>User-Friendly Interface:</b> NewPass features an intuitive and user-friendly interface, making it easy to generate, view, and manage your passwords. The app offers convenient options for copying passwords to the clipboard and securely sharing them with other applications.</li></ul></p>
         </div>
-        <div class="content" id="features">
-            <h2>Features</h2>
-            <ul>
-                <li>Secure storage of passwords with double AES encryption</li>
-                <li>Strong Password Generation</li>
-                <li>Open source and community-driven</li>
-                <li>Regular updates and security patches</li>
-                <li>User-Friendly Interface</li>
-            </ul>
-        </div>
+        
         <div class="content" id="download">
-            <h2>Download</h2>
-            <p>
-                <a href="https://f-droid.org/packages/com.gero.newpass/">
-            <img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png" height="55" alt="Get it on F-Droid">
-        </a>
-        <a href="https://github.com/6eero/NewPass/releases">
-            <img src="https://s1.ax1x.com/2023/01/12/pSu1a36.png" height="55" alt="GitHub Releases">
-        </a>
-        <a href="https://apt.izzysoft.de/fdroid/index/apk/com.gero.newpass/">
-            <img src="https://github.com/6eero/NewPass/assets/114809573/113b2ce8-fd57-490e-bce0-9db1e55f52ba" height="55" alt="IzzyOnDroid">
-        </a>
-            </p>
-        </div>
+    <h2>Download</h2>
+        <p>
+            <a class="badge-link" href="https://f-droid.org/packages/com.gero.newpass/">
+                <img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png" height="55" alt="Get it on F-Droid">
+            </a>
+            <a class="badge-link" href="https://github.com/6eero/NewPass/releases">
+                <img src="https://s1.ax1x.com/2023/01/12/pSu1a36.png" height="55" alt="GitHub Releases">
+            </a>
+            <a class="badge-link" href="https://apt.izzysoft.de/fdroid/index/apk/com.gero.newpass/">
+                <img src="https://github.com/6eero/NewPass/assets/114809573/113b2ce8-fd57-490e-bce0-9db1e55f52ba" height="55" alt="IzzyOnDroid">
+            </a>
+        </p>
+    </div>
+
         <div class="content" id="donate">
             <h2>Donate</h2>
             <p>This software thrives thanks to the dedication of passionate individuals in their free time. Your support, in any form, is deeply valued and appreciated. <br><br>Thank you ❤️</p>
