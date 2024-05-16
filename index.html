@@ -16,14 +16,6 @@
             background-color: #141218; /* background_secondary */
             overflow: hidden;
         }
-        .navbar a {
-            float: left;
-            display: block;
-            color: #ffffff; /* text_primary */
-            text-align: center;
-            padding: 14px 20px;
-            text-decoration: none;
-        }
         .navbar a:hover {
             background-color: #CDBDFA; /* accent */
             color: #141218; /* background_primary */
@@ -34,40 +26,40 @@
             padding-bottom: 50px;
             background-color: #141218; /* background_primary */
         }
-        .hero img {
-            width: 160px;
-            display: block;
-            margin: 0 auto;
-        }
         .hero h1 {
-            margin: 0px 0 0 0;
-            font-size: 4em;
+            margin: 50px 0 0 0;
+            font-size: 5em;
             color: #CDBDFA; /* accent */
         }
         .feature-graphic {
             text-align: center;
-            padding: 20px;
         }
         .feature-graphic img {
-            width: 100%;
-            max-width: 800px;
+            width: 90%;
             display: block;
-            margin: 0 auto;
-            border-radius: 10px;
+            margin: 80px auto 0;
+            border-radius: 0px;
         }
         .container {
-            padding: 20px;
+            padding: 60px;
             background-color: #141218; /* background_primary */
+            max-width: 640px; /* Imposta la larghezza massima */
+            margin: 0 auto; /* Centra il contenitore */
+            word-wrap: break-word; /* Imposta il comportamento del testo */
         }
         .content {
             margin: 50px 0;
         }
         .content h2 {
             color: #CDBDFA; /* accent */
-
+            max-width: 640px; /* Limita la larghezza del titolo */
+            margin: 0 auto 25px; /* Aggiunge spazio sotto il titolo */
+            text-align: left; /* Allinea il titolo a sinistra */
         }
         .content p, .content ul {
-            color: #ffffff; /* text_primary */
+            color: #B2B2B2; /* text_primary */
+            word-wrap: break-word; /* Imposta il comportamento del testo */
+            line-height: 1.5;
         }
         .content ul {
             list-style-type: none;
@@ -78,6 +70,7 @@
             margin: 20px 0;
             padding: 15px;
             border-radius: 5px;
+            word-wrap: break-word; /* Imposta il comportamento del testo */
         }
         .badges {
             text-align: center;
@@ -86,27 +79,11 @@
         .badges a img {
             margin: 10px;
             padding: 10px;
-            
         }
     </style>
 </head>
-<body>
-
-    <div class="navbar">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#features">Features</a>
-        <a href="https://github.com/6eero/NewPass">GitHub</a>
-    </div>
-
-    <div class="hero">
-        <img src="https://github.com/6eero/NewPass/blob/master/fastlane/metadata/android/en-US/images/icon.png?raw=true" alt="NewPass Logo">
-        <h1>NewPass</h1>
-        <p>Your secure password manager</p>
-    </div>
-
     <div class="feature-graphic">
-        <img src="https://github.com/6eero/NewPass/blob/master/fastlane/metadata/android/en-US/images/featureGraphic.png?raw=true" alt="NewPass Feature Graphic">
+        <img src="https://github.com/6eero/NewPass/blob/gh-pages/assets/img/banner.svg?raw=true" alt="NewPass Feature Graphic">
     </div>
 
     <div class="container">
@@ -121,13 +98,21 @@
         <div class="content" id="features">
             <h2>Features</h2>
             <ul>
-                <li>Secure storage of passwords with double AES encryption</li> <li>Strong Password Generation</li> <li>Open source and community-driven</li> <li>Regular updates and security patches</li> <li>User-Friendly Interface</li>
+                <li>Secure storage of passwords with double AES encryption</li>
+                <li>Strong Password Generation</li>
+                <li>Open source and community-driven</li>
+                <li>Regular updates and security patches</li>
+                <li>User-Friendly Interface</li>
             </ul>
         </div>
-    </div>
-    
-    <div class="badges">
-        <a href="https://f-droid.org/packages/com.gero.newpass/">
+        <div class="content" id="donate">
+            <h2>Donate</h2>
+            <p>This software thrives thanks to the dedication of passionate individuals in their free time. Your support, in any form, is deeply valued and appreciated. <br><br>Thank you ❤️</p>
+        </div>
+        <div class="content" id="download">
+            <h2>Download</h2>
+            <p>
+                <a href="https://f-droid.org/packages/com.gero.newpass/">
             <img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png" height="55" alt="Get it on F-Droid">
         </a>
         <a href="https://github.com/6eero/NewPass/releases">
@@ -136,6 +121,9 @@
         <a href="https://apt.izzysoft.de/fdroid/index/apk/com.gero.newpass/">
             <img src="https://github.com/6eero/NewPass/assets/114809573/113b2ce8-fd57-490e-bce0-9db1e55f52ba" height="55" alt="IzzyOnDroid">
         </a>
+            </p>
+        </div>
     </div>
+
 </body>
 </html>
