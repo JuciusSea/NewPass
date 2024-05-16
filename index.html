@@ -1,44 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NewPass</title>
-    <style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NewPass</title>
+  <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #141218; /* background_primary */
-            color: #ffffff; /* text_primary */
+            background-color: #141218;
+            color: #ffffff;
         }
         .navbar {
-            background-color: #141218; /* background_secondary */
+            background-color: #141218;
             overflow: hidden;
         }
         .navbar a:hover {
-            background-color: #CDBDFA; /* accent */
-            color: #141218; /* background_primary */
+            background-color: #CDBDFA;
+            color: #141218;
         }
         .hero {
             text-align: center;
             padding-top: 70px;
             padding-bottom: 50px;
-            background-color: #141218; /* background_primary */
+            background-color: #141218;
         }
         .hero h1 {
             margin: 6px;
             font-size: 4em;
-            color: #CDBDFA; /* accent */
+            color: #CDBDFA;
         }
         .hero p {
             margin: 0;
             font-size: 1em;
-            color: #ffffff; /* text_primary */
+            color: #ffffff;
         }
         .feature-graphic {
             text-align: center;
-            margin-top: 0px; /* Aggiunge spazio sopra l'immagine */
+            margin-top: 0px;
         }
         .feature-graphic img {
             width: 100%;
@@ -48,24 +48,24 @@
         }
         .container {
             padding: 60px;
-            background-color: #141218; /* background_primary */
-            max-width: 840px; /* Imposta la larghezza massima */
-            margin: 0 auto; /* Centra il contenitore */
-            word-wrap: break-word; /* Imposta il comportamento del testo */
+            background-color: #141218;
+            max-width: 840px;
+            margin: 0 auto;
+            word-wrap: break-word;
         }
         .content {
             margin: 50px 0;
         }
         .content h2 {
             
-            color: #CDBDFA; /* accent */
-            max-width: 840px; /* Limita la larghezza del titolo */
-            margin: 0 auto 30px; /* Aggiunge spazio sotto il titolo */
-            text-align: left; /* Allinea il titolo a sinistra */
+            color: #CDBDFA;
+            max-width: 840px;
+            margin: 0 auto 30px;
+            text-align: left;
         }
         .content p, .content ul {
-            color: #B2B2B2; /* text_primary */
-            word-wrap: break-word; /* Imposta il comportamento del testo */
+            color: #B2B2B2;
+            word-wrap: break-word;
             line-height: 1.6;
         }
         .content ul {
@@ -73,11 +73,11 @@
             padding: 0;
         }
         .content ul li {
-            background: #211f26; /* background_primary */
+            background: #211f26;
             margin: 30px 0;
             padding: 15px;
             border-radius: 10px;
-            word-wrap: break-word; /* Imposta il comportamento del testo */
+            word-wrap: break-word;
         }
         .badges {
             text-align: center;
@@ -88,16 +88,13 @@
             padding: 10px;
         }
         .badge-link {
-            margin: 0 10px; /* Aggiunge spazio tra i badge */
+            margin: 0 10px;
         }
         #download {
-            text-align: center; /* Centra il testo all'interno del contenitore */
-        }
-        .donate-buttons {
-             text-align: center;
+            text-align: center;
         }
 
-        .donate-button {
+        .button {
             display: inline-block;
             padding: 10px 20px;
             margin: 10px;
@@ -107,61 +104,68 @@
             border-radius: 5px;
         }
         
-        .donate-button:hover {
+        .button:hover {
             background-color: #BAA9F7;
         }
         .badge-link img {
-            width: 200px; /* Regola la larghezza dell'immagine del badge */
-            height: auto; /* Mantieni l'aspetto proporzionato */
+            width: 200px;
+            height: auto;
+        }
+
+        .github-button .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #CDBDFA;
+            color: #141218;
+            text-decoration: none;
+            border-radius: 5px;
         }
 
 
 
-    </style>
+  </style>
 </head>
 <body>
-
-    <div class="hero">
-        <h1>NewPass</h1>
-        <p>Secure your digital realm</p>
+  <div class="hero">
+    <h1>NewPass</h1>
+    <p>Secure your digital realm</p>
+  </div>
+  <div class="feature-graphic"><img src="https://github.com/6eero/NewPass/blob/gh-pages/assets/img/Banner.svg?raw=true" alt="NewPass Feature Graphic"></div>
+  <div class="container">
+    <div class="content" id="home">
+      <h2>Welcome to NewPass</h2>
+      <p>Take full control of your passwords with NewPass, an open-source app. Born out of my personal need to protect my credentials after a cyberattack, I developed this app to provide a secure and reliable solution for everyone. With NewPass, you can generate and securely store strong passwords on your device, without worrying about compromises or losses. Download NewPass today and enjoy the peace of mind knowing that your passwords are safe.<br>
+      <br>
+      Explore our features and join our community on GitHub:<br></p>
+      <div class="github-button">
+        <a class="button" href="https://github.com/6eero/NewPass"><img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub Logo" style="height: 20px; width: auto; margin-right: 5px;"> GitHub</a>
+      </div>
     </div>
-
-    <div class="feature-graphic">
-        <img src="https://github.com/6eero/NewPass/blob/gh-pages/assets/img/Banner.svg?raw=true" alt="NewPass Feature Graphic">
+    <div class="content" id="about">
+      <h2>Key Features</h2>
+      <ul>
+        <li><b>Password Generation:</b> NewPass provides a robust password generator that allows you to create complex and secure passwords tailored to your specific requirements. You can customize the length and the character set (Uppercase, Numbers and Special).</li>
+        <li><b>Local Storage:</b> Your passwords are stored locally on your device, ensuring complete privacy and control over your data. NewPass does not store any passwords on external servers, minimizing the risk of unauthorized access (If you uninstall the app, your password are lost!).</li>
+        <li><b>AES Encryption:</b> NewPass encrypts all stored passwords using Advanced Encryption Standard (AES) with Cipher Block Chaining (CBC) mode before saving them in the local database.</li>
+        <li><b>SQLite Chiper:</b> NewPass utilizes SQLCipher, an extension for SQLite databases, to bolster security further by encrypting entirely the database, ensuring robust protection against unauthorized access. The encryption key is chosen by the user upon the first launch of the app, and it remains saved and encrypted in an EncryptedSharedPreferences. It is then requested every time the app is launched.</li>
+        <li><b>User-Friendly Interface:</b> NewPass features an intuitive and user-friendly interface, making it easy to generate, view, and manage your passwords. The app offers convenient options for copying passwords to the clipboard and securely sharing them with other applications.</li>
+      </ul>
     </div>
-
-    <div class="container">
-        <div class="content" id="home">
-            <h2>Welcome to NewPass</h2>
-            <p>Take full control of your passwords with NewPass, an open-source app. Born out of my personal need to protect my credentials after a cyberattack, I developed this app to provide a secure and reliable solution for everyone. With NewPass, you can generate and securely store strong passwords on your device, without worrying about compromises or losses. Download NewPass today and enjoy the peace of mind knowing that your passwords are safe. Explore our features and join our community on GitHub.</p>
-        </div>
-        <div class="content" id="about">
-            <h2>Key Features</h2>
-            </b></p><ul><li><b>Password Generation:</b> NewPass provides a robust password generator that allows you to create complex and secure passwords tailored to your specific requirements. You can customize the length and the character set (Uppercase, Numbers and Special).</li><li><b>Local Storage:</b> Your passwords are stored locally on your device, ensuring complete privacy and control over your data. NewPass does not store any passwords on external servers, minimizing the risk of unauthorized access (If you uninstall the app, your password are lost!).</li><li><b>AES Encryption:</b> NewPass encrypts all stored passwords using Advanced Encryption Standard (AES) with Cipher Block Chaining (CBC) mode before saving them in the local database.</li><li><b>SQLite Chiper:</b> NewPass utilizes SQLCipher, an extension for SQLite databases, to bolster security further by encrypting entirely the database, ensuring robust protection against unauthorized access. The encryption key is chosen by the user upon the first launch of the app, and it remains saved and encrypted in an EncryptedSharedPreferences. It is then requested every time the app is launched.</li><li><b>User-Friendly Interface:</b> NewPass features an intuitive and user-friendly interface, making it easy to generate, view, and manage your passwords. The app offers convenient options for copying passwords to the clipboard and securely sharing them with other applications.</li></ul></p>
-        </div>
-        
-        <div class="content" id="download">
-    <h2>Download</h2>
-        <p>
-            <a class="badge-link" href="https://f-droid.org/packages/com.gero.newpass/">
-                <img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png">
-            </a>
-            <a class="badge-link" href="https://github.com/6eero/NewPass/releases">
-                <img src="https://s1.ax1x.com/2023/01/12/pSu1a36.png">
-            </a>
-        </p>
+    <div class="content" id="download">
+      <h2>Download</h2>
+      <p><a class="badge-link" href="https://f-droid.org/packages/com.gero.newpass/"><img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png" alt="get-it-on"></a> <a class="badge-link" href="https://github.com/6eero/NewPass/releases"><img src="https://s1.ax1x.com/2023/01/12/pSu1a36.png" alt="pSu1a36"></a></p>
     </div>
-
-        <div class="content" id="donate">
-    <h2>Donate</h2>
-    <p>This software thrives thanks to the dedication of passionate individuals in their free time. Your support, in any form, is deeply valued and appreciated. <br><br>Thank you ❤️<br><br></p>
-    <div class="donate-buttons">
-        <a class="donate-button" href="https://live.blockcypher.com/btc/address/bc1qlkm4wgtr0z3y72w9ag90vyejy895fc3fj3djtx">Donate with Bitcoin</a>
-        <a class="donate-button" href="https://www.paypal.com/paypalme/geeero">Donate with PayPal</a>
+    <div class="content" id="donate">
+      <h2>Donate</h2>
+      <p>This software thrives thanks to the dedication of passionate individuals in their free time. Your support, in any form, is deeply valued and appreciated.<br>
+      <br>
+      Thank you ❤️<br>
+      <br></p>
+      <div class="donate-buttons">
+        <a class="button" href="https://live.blockcypher.com/btc/address/bc1qlkm4wgtr0z3y72w9ag90vyejy895fc3fj3djtx">Donate with Bitcoin</a> <a class="button" href="https://www.paypal.com/paypalme/geeero">Donate with PayPal</a>
+      </div>
     </div>
-</div>
-
-    </div>
-
+  </div>
 </body>
 </html>
