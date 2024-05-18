@@ -13,18 +13,12 @@
             background-color: #141218;
             color: #ffffff;
             padding-top: 50px;
-            /* Altezza della barra */
             overflow-y: scroll;
-            /* Mantiene la funzionalità di scorrimento verticale */
         }
-
-        /* Nasconde visivamente la barra di scorrimento senza rimuovere la funzionalità */
 
         body::-webkit-scrollbar {
             width: 0px;
-            /* Larghezza della barra di scorrimento */
             background: transparent;
-            /* Colore di sfondo della barra */
         }
 
         .navbar {
@@ -32,27 +26,22 @@
             background-color: #141218;
             overflow: hidden;
             position: fixed;
-            /* Fissa la barra in cima */
             top: 0;
             left: 0;
             display: flex;
             align-items: center;
             padding: 10px 20px;
             z-index: 1000;
-            /* Assicurati che la barra sia sopra gli altri contenuti */
         }
 
         .navbar .logo img {
             height: 35px;
-            /* Altezza del logo */
         }
 
         .navbar .nav-links {
             display: flex;
             margin-left: auto;
-            /* Sposta il blocco dei link più a sinistra */
             margin-right: 30px;
-            /* Sposta il blocco dei link più a sinistra */
         }
 
         .navbar .nav-links a {
@@ -70,13 +59,12 @@
 
         .navbar .nav-links a:hover {
             color: #CDBDFA;
-            /* Colore di hover */
         }
 
         .hero {
             text-align: center;
             padding-top: 70px;
-            padding-bottom: 50px;
+            padding-bottom: 80px;
             background-color: #141218;
         }
 
@@ -110,6 +98,7 @@
             max-width: 840px;
             margin: 0 auto;
             word-wrap: break-word;
+            text-align: justify;
         }
 
         .content {
@@ -127,7 +116,7 @@
         .content ul {
             color: #B2B2B2;
             word-wrap: break-word;
-            line-height: 1.6;
+            line-height: 1.55;
         }
 
         .content ul {
@@ -204,11 +193,11 @@
             <a href="#donate">Donate</a>
         </div>
     </div>
-    <div class="hero">
+    <!--<div class="hero">
         <h1>NewPass</h1>
         <p>Secure your digital realm</p>
-    </div>
-    <div class="feature-graphic"><img src="https://github.com/6eero/NewPass/blob/gh-pages/assets/img/Banner.svg?raw=true" alt="NewPass Feature Graphic"></div>
+    </div>-->
+    <div class="feature-graphic"><img src="https://github.com/6eero/NewPass/blob/gh-pages/assets/img/top-banner.svg?raw=true" alt="NewPass Feature Graphic"></div>
     <div class="container">
         <div class="content" id="home">
             <h2>Welcome to NewPass</h2>
@@ -222,22 +211,32 @@
         <div class="content" id="about">
             <h2>Key Features</h2>
             <ul>
-                <li><b>Password Generation:</b> NewPass provides a robust password generator that allows you to create complex and secure passwords tailored to your specific requirements. You can customize the length and the character set (Uppercase, Numbers
-                    and Special).</li>
-                <li><b>Local Storage:</b> Your passwords are stored locally on your device, ensuring complete privacy and control over your data. NewPass does not store any passwords on external servers, minimizing the risk of unauthorized access (If you
-                    uninstall the app, your password are lost!).</li>
-                <li><b>AES Encryption:</b> NewPass encrypts all stored passwords using Advanced Encryption Standard (AES) with Cipher Block Chaining (CBC) mode before saving them in the local database.</li>
-                <li><b>SQLite Chiper:</b> NewPass utilizes SQLCipher, an extension for SQLite databases, to bolster security further by encrypting entirely the database, ensuring robust protection against unauthorized access. The encryption key is chosen
-                    by the user upon the first launch of the app, and it remains saved and encrypted in an EncryptedSharedPreferences. It is then requested every time the app is launched.</li>
-                <li><b>User-Friendly Interface:</b> NewPass features an intuitive and user-friendly interface, making it easy to generate, view, and manage your passwords. The app offers convenient options for copying passwords to the clipboard and securely
-                    sharing them with other applications.</li>
+                <li><b>Password Generation:</b> Create complex and secure passwords, customizable in length and character set (uppercase, numbers, and special characters).</li>
+                <li><b>Local Storage:</b> Passwords are stored locally on your device, ensuring privacy and control, with no data stored on external servers.</li>
+                <li><b>AES Encryption:</b> All passwords are encrypted using AES with CBC mode before being saved in the local database.</li>
+                <li><b>SQLite Cipher:</b> Utilizes SQLCipher for full database encryption, with an encryption key chosen by the user upon the app's first launch.</li>
+                <li><b>User-Friendly Interface:</b> Easy-to-use interface for generating, viewing, and managing passwords, with options for copying and securely sharing passwords.</li>
             </ul>
+
         </div>
-        <div class="content" id="download">
+        <div class="content" id="text-and-btns">
+            <h2>Screenshots</h2>
+            <div class="feature-graphic"><img src="https://github.com/6eero/NewPass/blob/gh-pages/assets/img/Screenshots.svg?raw=true" alt="NewPass Feature Graphic">
+            </div>
+        </div>
+
+
+
+        <div class="content" id="text-and-btns">
             <h2>Download</h2>
-            <p><a class="badge-link" href="https://f-droid.org/packages/com.gero.newpass/"><img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png" alt="get-it-on"></a> <a class="badge-link" href="https://github.com/6eero/NewPass/releases"><img src="https://s1.ax1x.com/2023/01/12/pSu1a36.png" alt="pSu1a36"></a></p>
+            <p>Get the best password encryption experience by downloading NewPass on your Android device today!</p>
+            <div class="donate-buttons">
+                <a class="button" href="https://6eero.github.io/NewPass/download/">Download</a>
+            </div>
         </div>
-        <div class="content" id="donate">
+
+
+        <div class="content" id="text-and-btns">
             <h2>Donate</h2>
             <p>This software thrives thanks to the dedication of passionate individuals in their free time. Your support, in any form, is deeply valued and appreciated. Thank you ❤️</p>
             <div class="donate-buttons">
