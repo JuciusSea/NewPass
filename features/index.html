@@ -64,44 +64,45 @@
         .container {
             max-width: 800px;
             margin: 0 auto;
+            padding: 0 20px; /* Aggiunto padding per una migliore leggibilità sui dispositivi mobili */
         }
 
         .feature-header {
             text-align: center;
-            margin-bottom: 170px;
+            margin-bottom: 50px;
+            padding: 20px 0; /* Aggiunto padding per una migliore leggibilità sui dispositivi mobili */
         }
 
         .feature-header h1 {
-            font-size: 2.5em;
+            font-size: 2.3em; /* Ridotto il font size per adattarsi meglio ai dispositivi mobili */
             color: #CDBDFA;
             margin: 0;
         }
 
         .feature-header p {
-            margin: 30px 0 0;
+            margin: 20px 0; /* Ridotto lo spazio tra il testo e le feature */
         }
 
         .feature {
             background-color: #211F26;
             padding: 20px;
-            padding-right: 40px;
-            padding-left: 40px;
-            margin: 50px 0;
+            margin: 30px 0; /* Ridotto lo spazio tra le feature */
             border-radius: 10px;
         }
 
         .feature h2 {
             color: #CDBDFA;
-            margin-bottom: 20px;
+            margin-bottom: 10px; /* Ridotto lo spazio tra il titolo e il testo */
         }
 
         .feature h3 {
             color: #B2B2B2;
-            margin-bottom: 20px;
+            margin-bottom: 10px; /* Ridotto lo spazio tra il sottotitolo e il testo */
         }
 
         .feature p {
             color: #B2B2B2;
+            margin-bottom: 10px; /* Ridotto lo spazio tra i paragrafi */
         }
 
         .feature ul {
@@ -140,7 +141,6 @@
             <h2>Password Generation</h2>
             <p>Generate complex and secure passwords tailored to your specific requirements" involves creating sequences of characters that are difficult for anyone to guess, using a combination of uppercase and lowercase letters, numbers, and symbols. </p><br>
             <h3><u>What can you customize?</u></h3>
-            </p>
             <ul>
                 <li>• Length of the password</li>
                 <li>• Presence of uppercase letters</li>
@@ -163,25 +163,16 @@
             <h3><u>First level</u></h3>
             <p>In the app, passwords are encrypted instantly when entered by the user, through a call to an "encrypt" method. This encryption occurs using a securely generated key stored in the Android Keystore, a protected environment for managing cryptographic
                 keys. Consequently, all passwords in the app's database are encrypted. To view a password, for example by clicking on the eye icon to show or hide the password, it is temporarily decrypted using a "decrypt" method and displayed to the
-                user. Importantly, this decryption process never compromises the encryption of passwords in the database; thus, during app usage, passwords remain constantly encrypted. </p><br>
-                
-                <h3><u>Second level</u></h3>
+                user. Importantly, this decryption process never compromises the encryption of passwords in the database; thus, during app usage, passwords remain constantly encrypted.</p><br>
 
-            <p>
-
-                Additionally, a second level of encryption is implemented provided by the SQLiteCipher library. This library encrypts the entire database using a key entered by the user during the first launch of the application. Thus, the user can be assured that their
-                passwords are encrypted by two different keys. There is no need to remember both keys, as the user only manages the one used to access the application. This double layer of encryption ensures greater data security, protecting passwords
-                from unauthorized access and ensuring they remain confidential and secure.</p>
-            <p></p>
-        </div>
-
-        <div class="feature">
-            <h2>User-Friendly Interface</h2>
-            <p>Enjoy an intuitive and user-friendly interface that makes generating, viewing, and managing your passwords easy. Convenient options are available for copying passwords to the clipboard and securely sharing them with other applications, enhancing
-                the overall user experience.</p>
-        </div>
-        <br><br><br><br><br>
-    </div>
+<h3><u>Second level</u></h3>
+<p>Additionally, a second level of encryption is implemented provided by the SQLiteCipher library. This library encrypts the entire database using a key entered by the user during the first launch of the application. Thus, the user can be assured that their passwords are encrypted by two different keys. There is no need to remember both keys, as the user only manages the one used to access the application. This double layer of encryption ensures greater data security, protecting passwords from unauthorized access and ensuring they remain confidential and secure.</p>
+</div>
+<div class="feature">
+    <h2>User-Friendly Interface</h2>
+    <p>Enjoy an intuitive and user-friendly interface that makes generating, viewing, and managing your passwords easy. Convenient options are available for copying passwords to the clipboard and securely sharing them with other applications, enhancing the overall user experience.</p>
+</div>
+<br><br><br><br><br>
+</div>
 </body>
-
 </html>
