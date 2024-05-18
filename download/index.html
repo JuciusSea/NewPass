@@ -16,13 +16,9 @@
             overflow-y: scroll;
         }
 
-        /* Nasconde visivamente la barra di scorrimento senza rimuovere la funzionalità */
-
         body::-webkit-scrollbar {
             width: 0px;
-            /* Larghezza della barra di scorrimento */
             background: transparent;
-            /* Colore di sfondo della barra */
         }
 
         .navbar {
@@ -30,27 +26,22 @@
             background-color: #141218;
             overflow: hidden;
             position: fixed;
-            /* Fissa la barra in cima */
             top: 0;
             left: 0;
             display: flex;
             align-items: center;
             padding: 10px 20px;
             z-index: 1000;
-            /* Assicurati che la barra sia sopra gli altri contenuti */
         }
 
         .navbar .logo img {
             height: 35px;
-            /* Altezza del logo */
         }
 
         .navbar .nav-links {
             display: flex;
             margin-left: auto;
-            /* Sposta il blocco dei link più a sinistra */
             margin-right: 30px;
-            /* Sposta il blocco dei link più a sinistra */
         }
 
         .navbar .nav-links a {
@@ -68,7 +59,6 @@
 
         .navbar .nav-links a:hover {
             color: #CDBDFA;
-            /* Colore di hover */
         }
 
         .container {
@@ -77,35 +67,55 @@
         }
 
         .download-header {
-            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             margin-bottom: 30px;
+        }
+
+        .download-header-text {
+            flex: 1;
         }
 
         .download-header h1 {
             font-size: 2.5em;
+            color: #CDBDFA;
+            margin: 0;
+        }
+
+        .download-header p {
+            margin: 20px 0 0;
         }
 
         .download-buttons {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            gap: 10px;
         }
 
-        .download-button {
-            margin: 10px;
-            padding: 15px 30px;
-            background-color: #141218;
-            color: #141218;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 1.2em;
+        .download-buttons img {
+            width: 250px;
         }
 
-        .download-button:hover {
-            background-color: #BAA9F7;
+        .changelog {
+            background-color: #211F26;
+            padding: 20px;
+            margin-top: 170px;
+            border-radius: 10px;
         }
 
-        .download-button img {
-            height: 5vw;
+        .changelog h2 {
+            text-align: center;
+        }
+
+        .changelog ul {
+            list-style-type: none;
+            padding: 10;
+        }
+
+        .changelog li {
+            margin: 7px 0;
+            color: #B2B2B2;
         }
     </style>
 </head>
@@ -113,12 +123,12 @@
 <body>
     <div class="navbar">
         <div class="logo">
-            <a href="#"><img src="https://github.com/6eero/NewPass/blob/gh-pages/assets/img/icon.png?raw=true" alt="NewPass Logo"></a>
+            <a href="https://6eero.github.io/NewPass/"><img src="https://github.com/6eero/NewPass/blob/gh-pages/assets/img/icon.png?raw=true" alt="NewPass Logo"></a>
         </div>
         <div class="nav-links">
             <a href="https://6eero.github.io/NewPass/">Home</a>
             <a href="#about">About</a>
-            <a href="#features">Features</a>
+            <a href="https://6eero.github.io/NewPass/">Features</a>
             <a href="https://6eero.github.io/NewPass/download/">Download</a>
             <a href="#donate">Donate</a>
         </div>
@@ -126,17 +136,47 @@
 
     <div class="container">
         <div class="download-header">
-            <h1>Get NewPass now!</h1>
-            <p>Get the latest version of NewPass to secure your digital realm.</p>
+            <div class="download-header-text">
+                <h1>Get NewPass now!</h1>
+                <p>Get the latest version of NewPass to secure your digital realm.</p>
+            </div>
+            <div class="download-buttons">
+                <a class="download-button" href="https://f-droid.org/packages/com.gero.newpass/" target="_blank">
+                    <img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png" alt="Download from F-Droid">
+                </a>
+                <a class="download-button" href="https://apt.izzysoft.de/fdroid/index/apk/com.gero.newpass/" target="_blank">
+                    <img src="https://github.com/6eero/NewPass/assets/114809573/113b2ce8-fd57-490e-bce0-9db1e55f52ba" alt="Download from F-Droid">
+                </a>
+                <a class="download-button" href="https://github.com/6eero/NewPass/releases" target="_blank">
+                    <img src="https://s1.ax1x.com/2023/01/12/pSu1a36.png" alt="Download from GitHub">
+                </a>
+            </div>
         </div>
-        <div class="download-buttons">
-            <a class="download-button" href="https://f-droid.org/packages/com.gero.newpass/" target="_blank">
-                <img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png" alt="Download from F-Droid">
-            </a>
-            <a class="download-button" href="https://github.com/6eero/NewPass/releases" target="_blank">
-                <img src="https://s1.ax1x.com/2023/01/12/pSu1a36.png" alt="Download from GitHub">
-            </a>
+        <div class="changelog">
+            <h2>NewPass v1.1.10 (12) ✨ </h2><br><br>
+            <ul>
+                <h3> Added </h3>
+                <li>• Added an icon and feature to search for an account in the database. 🔍</li>
+                <li>• Introduced a third text input to confirm the password during the password change process. 🔒</li>
+                <li>• Included Chinese language support. 🇨🇳</li>
+                <li>• Integrated Hindi language support. 🇮🇳</li>
+                <br><br>
+
+                <h3> Removed </h3>
+                <li>• Removed WRITE_EXTERNAL_STORAGE permission.</li>
+                <li>• Removed READ_EXTERNAL_STORAGE permission.</li>
+                <br><br>
+
+                <h3> Improvements </h3>
+                <li>• Enhanced the design of dialogs for improved user experience. 🎨</li>
+                <br><br>
+
+                <h3> Fixes </h3>
+                <li>• Resolved the issue where the status bar in light theme was not appearing. 🛠️</li>
+                <br>
+            </ul>
         </div>
+        <br><br><br><br><br><br>
     </div>
 </body>
 
