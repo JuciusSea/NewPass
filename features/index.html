@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewPass - Features</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #141218;
+            color: #ffffff;
+            padding-top: 170px;
+            overflow-y: scroll;
+        }
+
+        body::-webkit-scrollbar {
+            width: 0px;
+            background: transparent;
+        }
+
+        .navbar {
+            width: 100%;
+            background-color: #141218;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            z-index: 1000;
+        }
+
+        .navbar .logo img {
+            height: 35px;
+        }
+
+        .navbar .nav-links {
+            display: flex;
+            margin-left: auto;
+            margin-right: 30px;
+        }
+
+        .navbar .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1em;
+            padding: 8px 7px;
+            border-radius: 10px;
+        }
+
+        .navbar .nav-links a[href="https://6eero.github.io/NewPass/features"] {
+            background-color: #211F26;
+        }
+
+        .navbar .nav-links a:hover {
+            color: #CDBDFA;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .feature-header {
+            text-align: center;
+            margin-bottom: 170px;
+        }
+
+        .feature-header h1 {
+            font-size: 2.5em;
+            color: #CDBDFA;
+            margin: 0;
+        }
+
+        .feature-header p {
+            margin: 30px 0 0;
+        }
+
+        .feature {
+            background-color: #211F26;
+            padding: 20px;
+            padding-right: 40px;
+            padding-left: 40px;
+            margin: 50px 0;
+            border-radius: 10px;
+        }
+
+        .feature h2 {
+            color: #CDBDFA;
+            margin-bottom: 20px;
+        }
+
+        .feature h3 {
+            color: #B2B2B2;
+            margin-bottom: 20px;
+        }
+
+        .feature p {
+            color: #B2B2B2;
+        }
+
+        .feature ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0 0 0 20px;
+            color: #B2B2B2;
+        }
+
+        .feature ul li {
+            margin: 3px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="https://6eero.github.io/NewPass/"><img src="https://github.com/6eero/NewPass/blob/gh-pages/assets/img/icon.png?raw=true" alt="NewPass Logo"></a>
+        </div>
+        <div class="nav-links">
+            <a href="https://6eero.github.io/NewPass/">Home</a>
+            <a href="https://6eero.github.io/NewPass/features">Features</a>
+            <a href="https://6eero.github.io/NewPass/download/">Download</a>
+            <a href="https://6eero.github.io/NewPass/donate">Donate</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="feature-header">
+            <h1>Features of NewPass</h1>
+            <p>Explore the powerful features of NewPass that make password management secure and easy.</p>
+        </div>
+
+        <div class="feature">
+            <h2>Password Generation</h2>
+            <p>Generate complex and secure passwords tailored to your specific requirements" involves creating sequences of characters that are difficult for anyone to guess, using a combination of uppercase and lowercase letters, numbers, and symbols. </p><br>
+            <h3><u>What can you customize?</u></h3>
+            </p>
+            <ul>
+                <li>• Length of the password</li>
+                <li>• Presence of uppercase letters</li>
+                <li>• Presence of numbers</li>
+                <li>• Presence of special characters</li>
+            </ul>
+            <p> This way, you can create robust passwords that effectively safeguard your digital accounts from potential unauthorized access.</p>
+        </div>
+
+        <div class="feature">
+            <h2>Local Storage</h2>
+            <p>Securely store your passwords locally on your device, guaranteeing utmost privacy and control over your sensitive information. By opting for local storage, none of your passwords are transmitted or stored on external servers, eliminating any
+                potential vulnerabilities associated with remote data storage. This approach minimizes the risks of unauthorized access and data breaches, as your passwords remain confined within the confines of your device's storage, inaccessible to
+                external entities. With complete ownership and management of your password data, you can rest assured that your confidential information is shielded from external threats and remains under your exclusive control.</p>
+        </div>
+
+        <div class="feature">
+            <h2><u>Double</u> AES Encryption</h2>
+            <p>NewPass employs a two-layer encryption approach:</p> <br>
+            <h3><u>First level</u></h3>
+            <p>In the app, passwords are encrypted instantly when entered by the user, through a call to an "encrypt" method. This encryption occurs using a securely generated key stored in the Android Keystore, a protected environment for managing cryptographic
+                keys. Consequently, all passwords in the app's database are encrypted. To view a password, for example by clicking on the eye icon to show or hide the password, it is temporarily decrypted using a "decrypt" method and displayed to the
+                user. Importantly, this decryption process never compromises the encryption of passwords in the database; thus, during app usage, passwords remain constantly encrypted. </p><br>
+                
+                <h3><u>Second level</u></h3>
+
+            <p>
+
+                Additionally, a second level of encryption is implemented provided by the SQLiteCipher library. This library encrypts the entire database using a key entered by the user during the first launch of the application. Thus, the user can be assured that their
+                passwords are encrypted by two different keys. There is no need to remember both keys, as the user only manages the one used to access the application. This double layer of encryption ensures greater data security, protecting passwords
+                from unauthorized access and ensuring they remain confidential and secure.</p>
+            <p></p>
+        </div>
+
+        <div class="feature">
+            <h2>User-Friendly Interface</h2>
+            <p>Enjoy an intuitive and user-friendly interface that makes generating, viewing, and managing your passwords easy. Convenient options are available for copying passwords to the clipboard and securely sharing them with other applications, enhancing
+                the overall user experience.</p>
+        </div>
+        <br><br><br><br><br>
+    </div>
+</body>
+
+</html>
