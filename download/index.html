@@ -12,7 +12,8 @@
             padding: 0;
             background-color: #141218;
             color: #ffffff;
-            padding-top: 170px;
+            padding-top: 120px;
+            /* Ridotto lo spazio qui */
             overflow-y: scroll;
         }
 
@@ -71,7 +72,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            margin-bottom: 30px;
+            margin-bottom: 40px;
             flex-wrap: wrap;
         }
 
@@ -83,17 +84,19 @@
         .download-header h1 {
             font-size: 2.5em;
             color: #CDBDFA;
-            margin: 0;
+            margin-top: 0;
         }
 
         .download-header p {
-            margin: 20px 0 0;
+            margin: 30px 0 0;
         }
 
         .download-buttons {
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            gap: 5px;
+            margin-top: 50px;
+            margin-bottom: 60px;
         }
 
         .download-buttons img {
@@ -103,17 +106,24 @@
         .changelog {
             background-color: #211F26;
             padding: 20px;
-            margin-top: 170px;
+            margin-top: 50px;
             border-radius: 10px;
         }
 
         .changelog h2 {
             text-align: center;
+            color: #CDBDFA;
+            margin-bottom: 50px;
+        }
+
+        .changelog h3 {
+            margin-top: 40px;
+            margin-bottom: 20px;
         }
 
         .changelog ul {
-            list-style-type: none;
-            padding: 10;
+            list-style-type: disc;
+            padding-left: 20px;
         }
 
         .changelog li {
@@ -126,17 +136,14 @@
                 flex-direction: column;
                 align-items: flex-start;
             }
-
             .download-header-text {
                 margin-right: 0;
                 margin-bottom: 20px;
             }
-
             .download-buttons {
                 align-items: center;
                 width: 100%;
             }
-
             .download-buttons img {
                 width: 100%;
                 max-width: 250px;
@@ -177,31 +184,201 @@
             </div>
         </div>
         <div class="changelog">
-            <h2>NewPass v1.1.10 (12) ✨ </h2><br><br>
-            <ul>
-                <h3> Added </h3>
-                <li>• Added an icon and feature to search for an account in the database. 🔍</li>
-                <li>• Introduced a third text input to confirm the password during the password change process. 🔒</li>
-                <li>• Included Chinese language support. 🇨🇳</li>
-                <li>• Integrated Hindi language support. 🇮🇳</li>
-                <br><br>
-
-                <h3> Removed </h3>
-                <li>• Removed WRITE_EXTERNAL_STORAGE permission.</li>
-                <li>• Removed READ_EXTERNAL_STORAGE permission.</li>
-                <br><br>
-
-                <h3> Improvements </h3>
-                <li>• Enhanced the design of dialogs for improved user experience. 🎨</li>
-                <br><br>
-
-                <h3> Fixes </h3>
-                <li>• Resolved the issue where the status bar in light theme was not appearing. 🛠️</li>
-                <br>
-            </ul>
+            <h2>NewPass v1.1.10 (12) ✨</h2>
+            <div>
+                <h3>Added</h3>
+                <ul>
+                    <li>Added an icon and feature to search for an account in the database. 🔍</li>
+                    <li>Introduced a third text input to confirm the password during the password change process. 🔒</li>
+                    <li>Included Chinese language support. 🇨🇳</li>
+                    <li>Integrated Hindi language support. 🇮🇳</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Removed</h3>
+                <ul>
+                    <li>Removed WRITE_EXTERNAL_STORAGE permission. 🚫</li>
+                    <li>Removed READ_EXTERNAL_STORAGE permission. 🚫</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Improvements</h3>
+                <ul>
+                    <li>Enhanced the design of dialogs for improved user experience. 🎨</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Fixes</h3>
+                <ul>
+                    <li>Resolved the issue where the status bar in light theme was not appearing. 🛠️</li>
+                </ul>
+            </div>
         </div>
-        <br><br><br><br><br><br>
-    </div>
+
+        <div class="changelog">
+            <h2>NewPass v1.1.9 (11) ✨</h2>
+            <div>
+                <h3>Added</h3>
+                <ul>
+                    <li>Added an icon and a function to reveal the password. 👁️</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Removed</h3>
+                <ul>
+                    <li>Removed the MANAGE_EXTERNAL_STORAGE permission. 🚫</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="changelog">
+            <h2>NewPass v1.1.8 (10) ✨</h2>
+            <div>
+                <h3>Added</h3>
+                <ul>
+                    <li>Added an option to switch between biometric/device credentials or password to log in. ⚔️️</li>
+                    <li>Added a function to export and import database. ️</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Fixes</h3>
+                <ul>
+                    <li>Provide fallback option to password mode when biometric/pattern/PIN is discarded. 🛠</li>
+                </ul>
+                <h3>Minor Additions</h3>
+                <ul>
+                    <li>Added minimum length of 4 characters to new password for database. 📝</li>
+                    <li>Added a new switch in the settings menu.</li>
+                    <li>Added new translations.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="changelog">
+            <h2>NewPass v1.1.7 ✨</h2>
+            <div>
+                <h3>🚀 New Features</h3>
+                <ul>
+                    <li>Added new settings menu with a custom listview and a custom switch matching the NewPass design.</li>
+                    <li>Added a function to change the database password.</li>
+                    <li>Added ability to save passwords without email.</li>
+                </ul>
+            </div>
+            <div>
+                <h3>✨ Enhancements</h3>
+                <ul>
+                    <li>Added more translations.</li>
+                    <li>Improved vibration feedback.</li>
+                    <li>Improved user experience.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="changelog">
+            <h2>NewPass v1.1.6 ✨</h2>
+            <div>
+                <h3>Changelog 🌟</h3>
+                <h4>New Features</h4>
+                <ul>
+                    <li>Added login with biometric credential (or device credential) 🔒.</li>
+                    <li>Added support for Italian, French, and Spanish languages 🌍.</li>
+                    <li>Added Vibration feedback 📳.</li>
+                </ul>
+                <h4>Improvements</h4>
+                <ul>
+                    <li>Added "Import/Export" options in the settings menu (implementation coming soon) ⚙️.</li>
+                    <li>Improved settings menu UI 🎨.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="changelog">
+            <h2>NewPass v1.1.5 ✨</h2>
+            <div>
+                <h3>🚀 Release Notes</h3>
+                <h4>Added</h4>
+                <ul>
+                    <li>Added support for language selection.</li>
+                    <li>Added italian language.</li>
+                    <li>Added light mode.</li>
+                    <li>Added a button to toggle between dark mode and light mode.</li>
+                </ul>
+                <h4>Improved</h4>
+                <ul>
+                    <li>Setting UI.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="changelog">
+            <h2>NewPass v1.1.4 ✨</h2>
+            <div>
+                <h3>🚀 Release Notes</h3>
+                <h4>Added</h4>
+                <ul>
+                    <li>Implemented animations for smoother fragment transitions.</li>
+                </ul>
+                <h4>Fixes</h4>
+                <ul>
+                    <li>Resolved the issue of improper back navigation.</li>
+                    <li>Fixed UI issues in the "Generate Password" fragment.</li>
+                    <li>Corrected the display of a small white line on the fragment edge during animations.</li>
+                </ul>
+                <h4>Improved</h4>
+                <ul>
+                    <li>Moved some strings in the Login Activity to strings.xml for better localization.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="changelog">
+            <h2>NewPass v1.1.3 ✨</h2>
+            <div>
+                <h3>🚀 Release Notes</h3>
+                <h4>Added</h4>
+                <ul>
+                    <li>Implemented a settings menu.</li>
+                    <li>Introduced a settings button in the MainActivity.</li>
+                    <li>Increased character limits for username, email, and password fields.</li>
+                    <li>Auto hide password while typing on login screen.</li>
+                </ul>
+                <h4>Improved</h4>
+                <ul>
+                    <li>Enhanced security: EncryptionHelper no longer logs plaintext and keys.</li>
+                    <li>Refactored the codebase to adhere to the MVVM pattern.</li>
+                    <li>Improved password generation by switching to java.security.SecureRandom.</li>
+                    <li>Made various UI enhancements for better user experience.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="changelog">
+            <h2>NewPass v1.1.2 ✨</h2>
+            <div>
+                <h3>Fixed</h3>
+                <ul>
+                    <li>Fixed the DPI settings issue that made the app unusable on devices with small screens.</li>
+                </ul>
+                <h3>Improved</h3>
+                <ul>
+                    <li>General improvement of the UI.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="changelog">
+            <h2>NewPass v1.1.1 ✨</h2>
+            <div>
+                <h3>Added</h3>
+                <ul>
+                    <li>Added a function that prevent adding duplicate entries to the database.</li>
+                    <li>Set maximum and minimum length constraints on fields before inserting/updating entries in the database.</li>
+                    <li>Implemented view binding.</li>
+                    <li>Implemented a DBServiceLocator.</li>
+                </ul>
+            </div>
+        </div>
+
 </body>
 
 </html>
