@@ -193,6 +193,60 @@
             word-wrap: break-word;
             line-height: 1.55;
         }
+
+        .form-container {
+            background-color: #211f26;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 0px;
+            /* Ridimensionato il margine superiore */
+            margin-bottom: 0px;
+            /* Ridimensionato il margine inferiore */
+        }
+
+        .form-container form {
+            margin: 0;
+            /* Rimuove i margini predefiniti del form */
+            padding: 0;
+            /* Rimuove i padding predefiniti del form */
+        }
+
+        .form-container label,
+        .form-container input,
+        .form-container textarea {
+            display: block;
+            margin-bottom: 15px;
+            color: #ffffff;
+        }
+
+        .form-container input,
+        .form-container textarea {
+            width: calc(100% - 16px);
+            /* Ridimensiona la larghezza per compensare il padding */
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+            background-color: #141218;
+            color: #ffffff;
+        }
+
+        .form-container input[type="submit"] {
+            background-color: #CDBDFA;
+            color: #141218;
+            cursor: pointer;
+            margin-top: 30px;
+            /* Aggiunto margine sopra il bottone */
+            margin-left: auto;
+            /* Allinea il bottone a destra */
+            margin-right: auto;
+            /* Allinea il bottone a sinistra */
+            display: block;
+            /* Per centrare il bottone */
+        }
+
+        .form-container input[type="submit"]:hover {
+            background-color: #BAA9F7;
+        }
     </style>
 </head>
 
@@ -255,9 +309,31 @@
         </div>
 
         <div class="content" id="contribute">
-    <h2>Contribute</h2>
-    <p>If you're interested in contributing to the ongoing development of the NewPass project or want to report any bugs you encounter, we've provided comprehensive guidelines in the <a href="https://github.com/6eero/NewPass/blob/master/CONTRIBUTING.md" target="_blank">CONTRIBUTING.md</a> file. We wholeheartedly welcome and value contributions from the community, as they play a crucial role in enhancing the functionality and reliability of the application. </p>
-</div>
+            <h2>Contribute or Contact us Securely</h2>
+            <p>If you're interested in contributing to the ongoing development of the NewPass project or want to report any bugs you encounter, we've provided comprehensive guidelines in the <a href="https://github.com/6eero/NewPass/blob/master/CONTRIBUTING.md"
+                    target="_blank">CONTRIBUTING.md</a> file.
+
+                <br><br>
+                <h3>Contact us Securely</h3>
+                <p>We take security issues seriously. If you discover a vulnerability in our project, please follow these steps to report it:<br> *PGP coming soon*</p>
+                <div class="container">
+                    <div class="form-container">
+                        <form action="mailto:security@newpass.solutions" method="post" enctype="text/plain">
+                            <label for="name">Your Name:</label>
+                            <input type="text" id="name" name="name" required>
+
+                            <label for="email">Your Email:</label>
+                            <input type="email" id="email" name="email" required>
+
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+
+                            <input type="submit" value="Send">
+                        </form>
+                    </div>
+                </div>
+            </p>
+        </div>
 
 
         <div class="content" id="text-and-btns">
