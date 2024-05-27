@@ -1,0 +1,4 @@
+Contact: mailto:security@newpass.solutions
+Expires: 2025-05-18T12:00:00.000Z
+Encryption: https://github.com/6eero/NewPass/blob/master/public_key.asc
+Preferred-Languages: en, it
