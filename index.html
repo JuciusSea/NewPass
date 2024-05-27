@@ -273,8 +273,8 @@
     <div class="container">
         <div class="content" id="home">
             <h2>Welcome to NewPass</h2>
-            <p>Take full control of your passwords with NewPass, an open-source app. Born out of my personal need to protect my credentials after a cyberattack, I developed this app to provide a secure and reliable solution for everyone. With NewPass, you
-                can generate and securely store strong passwords on your device, without worrying about compromises or losses. Download NewPass today and enjoy the peace of mind knowing that your passwords are safe.<br>
+            <p>Take full control of your passwords with NewPass, an open-source password manager. Born out of my personal need to protect my credentials after a cyberattack, I developed this app to provide a secure and reliable solution for everyone. With NewPass, you
+                can generate and securely store strong passwords on your device, without worrying about compromises or losses. <br>
                 <br> Explore our features and join our community on GitHub:<br></p>
 
             <div class="github-button">
@@ -287,7 +287,7 @@
             <ul>
                 <li><b>Password Generation:</b> Create complex and secure passwords, customizable in length and character set (uppercase, numbers, and special characters).</li>
                 <li><b>Local Storage:</b> Passwords are stored locally on your device, ensuring privacy and control, with no data stored on external servers.</li>
-                <li><b>AES Encryption:</b> All passwords are encrypted using AES with CBC mode before being saved in the local database.</li>
+                <li><b>AES Encryption:</b> All passwords are encrypted using AES with Galois/Counter Mode (GCM) to ensure integrity and confidentiality before saving them in the local database.</li>
                 <li><b>SQLite Cipher:</b> Utilizes SQLCipher for full database encryption, with an encryption key chosen by the user upon the app's first launch.</li>
                 <li><b>User-Friendly Interface:</b> Easy-to-use interface for generating, viewing, and managing passwords, with options for copying and securely sharing passwords.</li>
             </ul>
@@ -319,10 +319,10 @@
         </div>
 
         <div class="content" id="contribute">
-            <h3>Contact us Securely</h3>
+            <h3>Report an issue securely</h3>
             <p>If you discover a security vulnerability, please inform us promptly. We prioritize investigating all legitimate reports and are committed to resolving issues promptly. For secure communication, encrypt messages using <a href="https://github.com/6eero/NewPass/blob/master/public_key.asc"
                     target="_blank">NewPass's GPG key</a> and send it to security@newpass.solutions.
-                <br><br> Further guidance is available <a href="https://github.com/6eero/NewPass/blob/master/SECURITY.md" target="_blank">here</a>.</p>
+                <br><br> Further guidance is available <a href="https://github.com/6eero/NewPass/blob/master/SECURITY.md" target="_blank">here</a>, or in the <a href="https://www.newpass.solutions/security.txt" target="_blank">security.txt</a> file.</p>
 
 
 
