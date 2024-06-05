@@ -250,8 +250,21 @@
         .form-container button[type="submit"]:hover {
             background-color: #BAA9F7;
             /* colore di sfondo al passaggio del mouse */
+            html {
+                display: none;
+            }
         }
     </style>
+
+    <script>
+        if (self == top) {
+            // Everything checks out, show the page.
+            document.documentElement.style.display = 'block';
+        } else {
+            // Break out of the frame.
+            top.location = self.location;
+        }
+    </script>
 </head>
 
 <body>
@@ -273,8 +286,8 @@
     <div class="container">
         <div class="content" id="home">
             <h2>Welcome to NewPass</h2>
-            <p>Take full control of your passwords with NewPass, an open-source password manager. Born out of my personal need to protect my credentials after a cyberattack, I developed this app to provide a secure and reliable solution for everyone. With NewPass, you
-                can generate and securely store strong passwords on your device, without worrying about compromises or losses. <br>
+            <p>Take full control of your passwords with NewPass, an open-source password manager. Born out of my personal need to protect my credentials after a cyberattack, I developed this app to provide a secure and reliable solution for everyone. With
+                NewPass, you can generate and securely store strong passwords on your device, without worrying about compromises or losses. <br>
                 <br> Explore our features and join our community on GitHub:<br></p>
 
             <div class="github-button">
