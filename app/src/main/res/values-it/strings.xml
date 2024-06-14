@@ -104,4 +104,15 @@
     <string name="language_changed">Lingua cambiata. Riavvia per vedere le modifiche</string>
     <string name="reenter_the_new_password">Reinserisci la password</string>
     <string name="passwords_do_not_match">Le password non corrispondono</string>
+    <string name="name_should_not_be_empty">Il nome non deve essere vuoto</string>
+    <string name="email_should_not_be_empty">L\'email/l\'utente non deve essere vuoto</string>
+    <string name="continue_button">Continua</string>
+    <string name="entropy">entropia:</string>
+    <string name="generate_lowercase">Minuscole</string>
+    <string name="export_database">Esporta database crittografato</string>
+    <string name="invalid_key">Chiave non valida</string>
+    <string name="password_cannot_be_empty">La password non può essere vuota!</string>
+    <string name="report_an_issue_securely">Segnala un problema in modo sicuro</string>
+    <string name="website">Sito web</string>
+
 </resources>

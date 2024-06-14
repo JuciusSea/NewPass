@@ -61,7 +61,6 @@
     <string name="name_should_be_1_to">"Имя должно быть от 1 "</string>
     <string name="characters_long">" знаков длиной!"</string>
     <string name="email_should_be_0_to">"Почта должна быть от 0 "</string>
-    <string name="password_should_be_at_least_4_ch_long">"Пароль должен быть от 4 "</string>
     <string name="login_done">Вы успешно вошли</string>
     <string name="access_denied">Неверный пароль</string>
     <string name="user_created_successfully">Пользователь успешно создан!</string>
@@ -97,4 +96,15 @@
     <string name="language_changed">Язык изменён. Перезапустите приложение, чтобы увидеть изменения</string>
     <string name="reenter_the_new_password">Введите пароль ещё раз</string>
     <string name="passwords_do_not_match">Пароли не совпадают</string>
+    <string name="name_should_not_be_empty">Имя не должно быть пустым</string>
+    <string name="email_should_not_be_empty">Email/пользователь не должен быть пустым</string>
+    <string name="continue_button">Продолжить</string>
+    <string name="entropy">энтропия:</string>
+    <string name="generate_lowercase">Строчные буквы</string>
+    <string name="export_database">Экспорт зашифрованной базы данных</string>
+    <string name="invalid_key">Неверный ключ</string>
+    <string name="password_cannot_be_empty">Пароль не может быть пустым!</string>
+    <string name="report_an_issue_securely">Безопасно сообщить о проблеме</string>
+    <string name="website">Веб-сайт</string>
+
 </resources>
