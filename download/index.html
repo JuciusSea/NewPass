@@ -182,71 +182,108 @@
                 </a>
             </div>
         </div>
+
         <div class="changelog">
-            <h2>NewPass v1.1.10 (12) ✨</h2>
+            <h2>NewPass v1.2.1 (12) ✨</h2>
             <div>
-                <h3>Added</h3>
+                <h3>Main</h3>
                 <ul>
-                    <li>Added an icon and feature to search for an account in the database. 🔍</li>
-                    <li>Introduced a third text input to confirm the password during the password change process. 🔒</li>
-                    <li>Included Chinese language support. 🇨🇳</li>
-                    <li>Integrated Hindi language support. 🇮🇳</li>
+                    <li>Switched to AES-GCM mode for encryption to ensure the integrity of input values.</li>
+                    <li>Added functionality to export/import database as encrypted JSON (AES-GCM and PBKDF2 with HMAC SHA256).</li>
+                    <li>Password hashes are now stored in encrypted shared preferences (PBKDF2 with HMAC SHA256).</li>
                 </ul>
             </div>
             <div>
-                <h3>Removed</h3>
+                <h3>Additions</h3>
                 <ul>
-                    <li>Removed WRITE_EXTERNAL_STORAGE permission. 🚫</li>
-                    <li>Removed READ_EXTERNAL_STORAGE permission. 🚫</li>
+                    <li>The generate password screen now displays the entropy level of the password.</li>
+                    <li>Option to disable lowercase characters.</li>
+                    <li>Added information on secure contact methods, website links, and more in the settings.</li>
+                    <li>Added animation to the login button when an incorrect password is entered.</li>
+                    <li>Warning message displayed on first launch.</li>
+                    <li>Added multiple language options.</li>
                 </ul>
             </div>
             <div>
                 <h3>Improvements</h3>
                 <ul>
-                    <li>Enhanced the design of dialogs for improved user experience. 🎨</li>
+                    <li>Enhanced haptic feedback experience.</li>
+                    <li>Increased the length of generated passwords up to 64 characters.</li>
                 </ul>
             </div>
             <div>
-                <h3>Fixes</h3>
+                <h3>Removals</h3>
                 <ul>
-                    <li>Resolved the issue where the status bar in light theme was not appearing. 🛠️</li>
+                    <li>Removed all length restrictions on input fields such as name, email, and password.️</li>
                 </ul>
             </div>
         </div>
 
         <div class="changelog">
-            <h2>NewPass v1.1.9 (11) ✨</h2>
+            <h2>NewPass v1.1.10 (12)</h2>
             <div>
                 <h3>Added</h3>
                 <ul>
-                    <li>Added an icon and a function to reveal the password. 👁️</li>
+                    <li>Added an icon and feature to search for an account in the database.</li>
+                    <li>Introduced a third text input to confirm the password during the password change process.</li>
+                    <li>Included Chinese language support.</li>
+                    <li>Integrated Hindi language support.</li>
                 </ul>
             </div>
             <div>
                 <h3>Removed</h3>
                 <ul>
-                    <li>Removed the MANAGE_EXTERNAL_STORAGE permission. 🚫</li>
+                    <li>Removed WRITE_EXTERNAL_STORAGE permission.</li>
+                    <li>Removed READ_EXTERNAL_STORAGE permission.</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Improvements</h3>
+                <ul>
+                    <li>Enhanced the design of dialogs for improved user experience.</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Fixes</h3>
+                <ul>
+                    <li>Resolved the issue where the status bar in light theme was not appearing.️</li>
                 </ul>
             </div>
         </div>
 
         <div class="changelog">
-            <h2>NewPass v1.1.8 (10) ✨</h2>
+            <h2>NewPass v1.1.9 (11)</h2>
             <div>
                 <h3>Added</h3>
                 <ul>
-                    <li>Added an option to switch between biometric/device credentials or password to log in. ⚔️️</li>
+                    <li>Added an icon and a function to reveal the password.️</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Removed</h3>
+                <ul>
+                    <li>Removed the MANAGE_EXTERNAL_STORAGE permission.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="changelog">
+            <h2>NewPass v1.1.8 (10)</h2>
+            <div>
+                <h3>Added</h3>
+                <ul>
+                    <li>Added an option to switch between biometric/device credentials or password to log in.️️</li>
                     <li>Added a function to export and import database. ️</li>
                 </ul>
             </div>
             <div>
                 <h3>Fixes</h3>
                 <ul>
-                    <li>Provide fallback option to password mode when biometric/pattern/PIN is discarded. 🛠</li>
+                    <li>Provide fallback option to password mode when biometric/pattern/PIN is discarded.</li>
                 </ul>
                 <h3>Minor Additions</h3>
                 <ul>
-                    <li>Added minimum length of 4 characters to new password for database. 📝</li>
+                    <li>Added minimum length of 4 characters to new password for database.</li>
                     <li>Added a new switch in the settings menu.</li>
                     <li>Added new translations.</li>
                 </ul>
@@ -254,9 +291,9 @@
         </div>
 
         <div class="changelog">
-            <h2>NewPass v1.1.7 ✨</h2>
+            <h2>NewPass v1.1.7</h2>
             <div>
-                <h3>🚀 New Features</h3>
+                <h3>New Features</h3>
                 <ul>
                     <li>Added new settings menu with a custom listview and a custom switch matching the NewPass design.</li>
                     <li>Added a function to change the database password.</li>
@@ -264,7 +301,7 @@
                 </ul>
             </div>
             <div>
-                <h3>✨ Enhancements</h3>
+                <h3>Enhancements</h3>
                 <ul>
                     <li>Added more translations.</li>
                     <li>Improved vibration feedback.</li>
@@ -274,35 +311,33 @@
         </div>
 
         <div class="changelog">
-            <h2>NewPass v1.1.6 ✨</h2>
+            <h2>NewPass v1.1.6</h2>
             <div>
-                <h3>Changelog 🌟</h3>
-                <h4>New Features</h4>
+                <h3>New Features</h3>
                 <ul>
-                    <li>Added login with biometric credential (or device credential) 🔒.</li>
-                    <li>Added support for Italian, French, and Spanish languages 🌍.</li>
-                    <li>Added Vibration feedback 📳.</li>
+                    <li>Added login with biometric credential (or device credential).</li>
+                    <li>Added support for Italian, French, and Spanish languages.</li>
+                    <li>Added Vibration feedback.</li>
                 </ul>
-                <h4>Improvements</h4>
+                <h3>Improvements</h3>
                 <ul>
-                    <li>Added "Import/Export" options in the settings menu (implementation coming soon) ⚙️.</li>
-                    <li>Improved settings menu UI 🎨.</li>
+                    <li>Added "Import/Export" options in the settings menu (implementation coming soon).</li>
+                    <li>Improved settings menu UI.</li>
                 </ul>
             </div>
         </div>
 
         <div class="changelog">
-            <h2>NewPass v1.1.5 ✨</h2>
+            <h2>NewPass v1.1.5</h2>
             <div>
-                <h3>🚀 Release Notes</h3>
-                <h4>Added</h4>
+                <h3>Added</h3>
                 <ul>
                     <li>Added support for language selection.</li>
                     <li>Added italian language.</li>
                     <li>Added light mode.</li>
                     <li>Added a button to toggle between dark mode and light mode.</li>
                 </ul>
-                <h4>Improved</h4>
+                <h3>Improved</h3>
                 <ul>
                     <li>Setting UI.</li>
                 </ul>
@@ -310,20 +345,19 @@
         </div>
 
         <div class="changelog">
-            <h2>NewPass v1.1.4 ✨</h2>
+            <h2>NewPass v1.1.4</h2>
             <div>
-                <h3>🚀 Release Notes</h3>
-                <h4>Added</h4>
+                <h3>Added</h3>
                 <ul>
                     <li>Implemented animations for smoother fragment transitions.</li>
                 </ul>
-                <h4>Fixes</h4>
+                <h3>Fixes</h3>
                 <ul>
                     <li>Resolved the issue of improper back navigation.</li>
                     <li>Fixed UI issues in the "Generate Password" fragment.</li>
                     <li>Corrected the display of a small white line on the fragment edge during animations.</li>
                 </ul>
-                <h4>Improved</h4>
+                <h3>Improved</h3>
                 <ul>
                     <li>Moved some strings in the Login Activity to strings.xml for better localization.</li>
                 </ul>
@@ -331,17 +365,16 @@
         </div>
 
         <div class="changelog">
-            <h2>NewPass v1.1.3 ✨</h2>
+            <h2>NewPass v1.1.3</h2>
             <div>
-                <h3>🚀 Release Notes</h3>
-                <h4>Added</h4>
+                <h3>Added</h3>
                 <ul>
                     <li>Implemented a settings menu.</li>
                     <li>Introduced a settings button in the MainActivity.</li>
                     <li>Increased character limits for username, email, and password fields.</li>
                     <li>Auto hide password while typing on login screen.</li>
                 </ul>
-                <h4>Improved</h4>
+                <h3>Improved</h3>
                 <ul>
                     <li>Enhanced security: EncryptionHelper no longer logs plaintext and keys.</li>
                     <li>Refactored the codebase to adhere to the MVVM pattern.</li>
@@ -352,7 +385,7 @@
         </div>
 
         <div class="changelog">
-            <h2>NewPass v1.1.2 ✨</h2>
+            <h2>NewPass v1.1.2</h2>
             <div>
                 <h3>Fixed</h3>
                 <ul>
@@ -366,7 +399,7 @@
         </div>
 
         <div class="changelog">
-            <h2>NewPass v1.1.1 ✨</h2>
+            <h2>NewPass v1.1.1</h2>
             <div>
                 <h3>Added</h3>
                 <ul>
